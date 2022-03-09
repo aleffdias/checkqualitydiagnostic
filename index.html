@@ -1,0 +1,65 @@
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+
+    <title>Check Quality Diagnostic</title>
+    <meta name="description" content="SAFETY">
+    <meta name="author" content="Aleff A. Dias & Emilly Unally">
+    <link rel="icon" type="image/x-icon" href="https://99app.com/wp-content/themes/99app/assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</head>
+
+<body>
+	<form class="questions_box">
+
+            <!--Box ticket-->
+
+            <div id="Box">
+                <h2>Check Quality Diagnostic</h2>
+                <div class="row">
+                    <input id="ticket" name="favelang" placeholder="Digite o ID do ticket" />
+                    <h5 id=print_erro_ticket></h5>
+                    <div class="row">
+                        <select id="contact">
+                            <option selected>Selecione a CR</option>
+                            <option>Alterar o veiculo</option>
+                            <option>Passageiro nao pagou</option>
+                            <option>Como ver o saldo da conta</option>
+                            <option>Achados e perdidos</option>
+                        </select>
+                        <h5 id=print_erro_CR></h5>
+
+                        <div id="CR_1">
+                            <input id="resposta1" type="checkbox" value="1" /> Informou ao driver que o prazo para análise, após o envio do documento do veículo, É DE 2 DIAS CORRIDOS<br>
+                            <input id="resposta2" type="checkbox" value="2" /> Orientou driver a enviar o documento em formato PDF, pois é feito uma validação no QR Code<br>
+                        </div>
+
+                        <div id="CR_2">
+                            <input id="resposta3" type="checkbox" value="1" /> Notificou o pax, conforme regra da politica de bloqueio<br>
+                            <input id="resposta4" type="checkbox" value="2" /> Ofereceu denylist ao driver<br>
+                            <input id="resposta5" type="checkbox" value="3" /> Informou que o valor pode ser creditado em até 24 horas<br>
+                        </div>
+
+                        <div id="CR_3">
+                            <input id="resposta6" type="checkbox" value="1" /> Informou ao driver que esses documentos não possuem fim fiscal e não podem ser apresentados como válidos para orgãos fiscais. Visto que não há vínculo empregatício<br>
+                            <input id="resposta7" type="checkbox" value="2" /> Notificou que o prazo para recebimento no e-mail é de ate 2 horas<br>
+                            <input id="resposta8" type="checkbox" value="3" /> Enviou o extrato conforme o driver solicitou<br>
+                        </div>
+
+                        <div id="CR_4">
+                            <input id="resposta9" type="checkbox" value="1" /> Informou ao driver que o número virtual tem validade de 72 h<br>
+                            <input id="resposta10" type="checkbox" value="2" /> Enviou notificação ao pasasgeiro informando que o motorista entrará em contato para combinar a entrega do objeto<br>
+                            <input id="resposta11" type="checkbox" value="3" /> Agradeceu ao motorista pela preocupação com o item encontrado<br>
+                        </div>
+
+                    </div>
+                    <div id="submit" class="button">Resposta</div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </form>
+
+	<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
